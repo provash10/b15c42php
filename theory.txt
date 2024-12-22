@@ -1,0 +1,97 @@
+Class 42 @direct repository without add a readme file setup
+Class-42 (READ_UPDATE_DELETE Queries)
+https://www.facebook.com/muntasir.fahim8/videos/1520380028661604/?idorvanity=7295095747278784
+====================================================================
+localhost/phpmyadmin or XAMPP Admin Open
+
+======CRUD=====
+
+============CRUD==========
+C = Create (Data Create)
+R = Read   (Browse/structure deke/kore data read korte partesi)
+U = Update (double click kore any change kora (baire click for update) k update bole)
+D = Delete (Remove id/ remove all) 
+
+*****MySQL => Hard Delete >>>> Not any Undo Option.
+*****Data Insert id(id all time unique) must according to rules if any person is absent....
+
+Apllicaation  => 60%-70% CRUD
+Remaining => 40%-30%  (Business Logic)
+
+================
+Data Read By Query by MySQL === USE SQL 
+
+R = Read   (Browse/structure deke/kore data read korte partesi)
+
+R = Read
+individually data dekbo /or all data dekbo
+* = all
+* = all ===>>> all students data dekbo, tai,
+SELECT * FROM students;
+
+SELECT roll, class, email FROM students;
+
+Read ==>>> jader roll number 1 tader data dekte chaile...
+        
+SELECT * FROM students WHERE roll=1;
+SELECT * FROM students WHERE name="Rumpa";
+
+Law/Rules: SELECT */roll, class FROM students WHERE name="Rumpa";
+
+SELECT * FROM students WHERE name="Rumpa";
+SELECT roll, class FROM students WHERE name="Rumpa";
+SELECT name, roll, class FROM students WHERE name="Rumpa";
+
+*****just akjoner data dekta chaile (specific vabe) 
+id dore dekte hobe kenona id unique thake>>>>
+
+SELECT * FROM students WHERE id=1;
+================================================
+U = Update 
+(double click kore any change kora (baire click for update) k update bole)
+..
+
+Law/Rules: 
+UPDATE   table name    SET name = "MD Rumel Hasan" WHERE id = 1;
+UPDATE students SET name = "MD Rumel Hasan" WHERE id = 1;
+
+UPDATE students SET name = "Most Tina" WHERE id = 4;
+
+Go to students table and check update >>>> ok....done.
+
+All Data Change korte  >>>>
+UPDATE students SET name = "MD Rumi" roll= 1, class= 7, address= "Dhupkhola,Dhaka" WHERE id = 2;
+UPDATE students SET name = "Mina Raju" roll= 20, class= 10, address= "Hatirjhil,Dhaka", email= minaraju20@gmail.com WHERE id = 5;
+
+UPDATE students SET roll= 15, class= 8, address= "Dhupkhola,Dhaka" WHERE id = 4;
+
+
+====
+UPDATE students SET address = "Gazipur,Dhaka" WHERE phone="+8801710100005";
+
+====================================================================================
+//////////////////////////////////////////////////////////////////////////////////
+D = Delete (Remove id/ remove all) 
+
+id dhore delete korte hobe
+DELETE FROM table name WHERE id= ***; 
+DELETE FROM students WHERE id= 3; 
+
+*****Not use this >>>>>DELETE FROM students WHERE phone="+8801710100005";
+
+========================================================================
+DataBase share>>>>click>>> school_management_system_1 >>>export 
+>>>Again Export >>> download/save >>> copy the file and paste the
+targeted folder in github.
+
+Create a new database >>> and import the copy file and upload
+(to seeing others database) ........
+==============================
+git status
+git add . 
+git commit -m"first commit"
+
+OR >>> git commit -m"READ-UPDATE-DELETE Queries"
+
+git push 
+enter >>>>OK >>>done. 
