@@ -1,6 +1,5 @@
 Class 42 @direct repository without add a readme file setup
 Class-42 (READ_UPDATE_DELETE Queries)
-https://www.facebook.com/muntasir.fahim8/videos/1520380028661604/?idorvanity=7295095747278784
 ====================================================================
 localhost/phpmyadmin or XAMPP Admin Open
 
